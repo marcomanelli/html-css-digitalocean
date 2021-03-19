@@ -1,7 +1,15 @@
 .debug [class*="col-"] {
-  background-color: rgb(17, 177, 226);
+  background-color: rgba(17, 177, 226, 0.6);
   border: 1px solid black;
   min-height: 50px;
+}
+
+.widht-100 {
+  width: 100%;
+}
+
+.bg-color-gray {
+  background-color: #F3F5F9;
 }
 
 /* HEADER */
@@ -10,12 +18,16 @@ header {
   position: fixed;
   z-index: 99;
   background-color: white;
-  width: 100%;
 }
 
-main section:first-child {
+/* TOP */
+#mm-jumbotron {
   background-color: blue;
   color: white;
   height: 812px;
   padding-top: 65px;
+}
+
+#websites {
+  height: 300px;
 }
