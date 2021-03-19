@@ -1,0 +1,21 @@
+.debug [class*="col-"] {
+  background-color: rgb(17, 177, 226);
+  border: 1px solid black;
+  min-height: 50px;
+}
+
+/* HEADER */
+header {
+  height: 65px;
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  width: 100%;
+}
+
+main section:first-child {
+  background-color: blue;
+  color: white;
+  height: 812px;
+  padding-top: 65px;
+}
