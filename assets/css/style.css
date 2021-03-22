@@ -4,6 +4,10 @@
   min-height: 50px;
 }
 
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
 .widht-100 {
   width: 100%;
 }
@@ -12,33 +16,123 @@
   background-color: #F3F5F9;
 }
 
-/* HEADER */
-header {
-  position: fixed;
-  z-index: 99;
-  background-color: white;
+.mm-link {
+  color: #006AFF;
+  text-decoration: underline;
 }
 
-header .logo {
+/* HEADER */
+.header-piece {
   height: 65px;
   line-height: 65px;
   vertical-align: middle;
 }
 
-header .logo img {
-  height: 45px;
+header {
+  position: fixed;
+  z-index: 99;
+  background-color: white;
+  font-weight: 500;
+  box-shadow: 1px 0 2px gray;
 }
 
+header img {
+  height: 36px;
+}
 
+header ul a {
+  color: #031C4E;
+}
+
+.mm-white-button{
+  color: #006AFF;
+  border: 1px solid #006AFF;
+}
+
+.mm-hamburger {
+  color: #3A8AFF;
+  font-size: 24px;
+  vertical-align: middle;
+}
 
 /* TOP */
 #mm-jumbotron {
-  background-color: blue;
+  background-image: url(../img/bg-banner-home.jpg);
+  background-size: 2000px;
   color: white;
-  height: 812px;
-  padding-top: 65px;
+  padding-top: 125px;
+  padding-bottom: 60px;
 }
 
+#mm-jumbotron h1 {
+  line-height: 110%;
+  font-size: 48px;
+  max-width: 500px;
+}
+
+#mm-jumbotron p.mm-subtitle {
+  display: block;
+  color: #BBCDFF;
+  line-height: 130%;
+  font-size: 18px;
+  margin-top: 20px;
+  max-width: 600px;
+}
+
+/* BOX */
+.mm-box {
+  background-color: white;
+  color: #031C4E;
+  text-align: center;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.mm-box h2 {
+  font-weight: 700;
+}
+
+.mm-box h2 span {
+  color: #006AFF;
+  display: block;
+}
+
+.mm-box input{
+  width: 100%;
+  margin: 5px 0;
+}
+
+.mm-box-input {
+  height: 44px;
+  border:1px solid lightgrey;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.mm-box-button {
+  height: 32px;
+  border: none;
+  border-radius: 5px;
+  font-weight: 700;
+}
+
+.mm-box-button#create {
+  background-color: #579AFF;
+  color: white;
+}
+
+.mm-box-button#google {
+  background-color: white;
+  color: #717171;
+  box-shadow: 1px 1px 3px gray;
+  margin-bottom: 15px;
+}
+
+.mm-box p {
+  font-weight: 500;
+}
+
+/* WEBSITES */
 #websites {
   height: 300px;
 }

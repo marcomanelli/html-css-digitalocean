@@ -1,36 +1,87 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Digital Ocean</title>
 
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
 
     <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+      integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu"
+      crossorigin="anonymous"
+    />
 
     <!-- Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
   </head>
 
   <body>
-
     <!-- Header -->
     <header class="widht-100">
-      <div class="container debug">
+      <div class="container">
         <div class="row">
-          <div class="col-xs-6 col-lg-4 logo">
-            <img src="assets/img/logo.png" alt="logo">
+          <!-- Header left -->
+          <div class="col-xs-6 col-lg-4 header-piece">
+            <img src="assets/img/logo.png" alt="logo" />
           </div>
-          <div class="visible-lg col-lg-4">list</div>
-          <div class="col-xs-6 col-lg-4 text-right">
+          <!-- Header central -->
+          <div class="visible-lg col-lg-4 header-piece">
+            <ul class="list-inline list-unstyled">
+              <li>
+                <a href="#">Products <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Customers</a>
+              </li>
+              <li>
+                <a href="#">Community <i class="fas fa-chevron-down"></i></a>
+              </li>
+              <li>
+                <a href="#">Pricing</a>
+              </li>
+            </ul>
+          </div>
+          <!-- Header right -->
+          <div class="col-xs-6 col-lg-4 text-right header-piece">
+            <!-- Hamburger icon -->
             <div class="hidden-lg">
-              <i class="fas fa-bars"></i>
+              <a href="#"><i class="fas fa-bars mm-hamburger"></i></a>
             </div>
-            <p class="visible-lg">menu</p>
+            <!-- Hamburger menu -->
+            <div class="visible-lg">
+              <ul class="list-inline list-unstyled">
+                <li>
+                  <a href="#">Docs</a>
+                </li>
+                <li>
+                  <a href="#">Support <i class="fas fa-chevron-down"></i></a>
+                </li>
+                <li>
+                  <a href="#">Login</a>
+                </li>
+                <li>
+                  <a href="#" class="btn mm-white-button">Sign Up</a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -38,21 +89,31 @@
 
     <!-- Main -->
     <main>
-
       <!-- Top -->
       <section>
-
         <!-- Jumbotron -->
         <div id="mm-jumbotron" class="widht-100">
-          <div class="container debug">
+          <div class="container">
             <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <h1>title</h1>
-                <p>text</p>
+              <div class="col-xs-12 col-sm-7">
+                <h1>The simplest cloud platform for developers & teams</h1>
+                <p class="mm-subtitle">Deploy, manage, and scale cloud applications faster and more efficiently on DigitalOcean. We make managing infrastructure easy for teams and businesses, whether you're running one virtual machine or ten thousand.</p>
               </div>
-  
-              <div class="col-xs-12 col-sm-6">
-                box
+
+              <!-- Box -->
+              <div class="col-xs-12 col-sm-5">
+                <div class="mm-box">
+                  <h2>Deploy your app in seconds. <span>Get started now.</span></h2>
+
+                  <form action="url">
+                    <input type="email" name="email" placeholder="Email" class="mm-box-input">
+                    <input type="password" name="password" placeholder="Password" class="mm-box-input">
+                    <input type="button" value="Create your account" class="mm-box-button" id="create">
+                    <input type="button" value="Sign up with google" class="mm-box-button" id="google">
+                  </form>
+
+                  <p>By signing up you agree to the <a href="#" class="mm-link">Terms of Service</a></p>
+                </div>
               </div>
             </div>
           </div>
@@ -73,7 +134,15 @@
 
     <footer></footer>
 
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+      integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
