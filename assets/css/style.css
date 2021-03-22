@@ -14,11 +14,22 @@
 
 /* HEADER */
 header {
-  height: 65px;
   position: fixed;
   z-index: 99;
   background-color: white;
 }
+
+header .logo {
+  height: 65px;
+  line-height: 65px;
+  vertical-align: middle;
+}
+
+header .logo img {
+  height: 45px;
+}
+
+
 
 /* TOP */
 #mm-jumbotron {
