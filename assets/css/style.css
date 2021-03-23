@@ -28,6 +28,26 @@ body {
   font-weight: 700;
 }
 
+/* ARROWS */
+[class*="mm-arrow-"] {
+  font-size: 50px;
+  vertical-align: middle;
+}
+
+.mm-arrow-active {
+  color: #031c4e;
+}
+
+.mm-arrow-inactive {
+  color: #6F7B97;
+}
+
+/* DOTS */
+.mm-dots li {
+  padding: 0;
+  color: #006aff;
+}
+
 /* HEADER */
 .header-piece {
   height: 65px;
@@ -200,3 +220,14 @@ header img {
 #developers {
   padding: 50px 0;
 }
+
+#developers div.col-12 > p {
+  font-size: 18px;
+  color: #5C6A88;
+}
+
+#developers img {
+  width: 50%;
+  margin: 40px 20px 20px;
+}
+
