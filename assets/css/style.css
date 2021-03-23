@@ -1,5 +1,5 @@
 .debug [class*="col-"] {
-  background-color: rgba(17, 177, 226, 0.6);
+  background-color: rgba(17, 177, 226, 0.3);
   border: 1px solid black;
 }
 
@@ -18,6 +18,10 @@ body {
 
 .mm-link {
   color: #006aff;
+}
+
+.mm-blue {
+  color: #031c4e;
 }
 
 .weight-700 {
@@ -40,10 +44,6 @@ header {
 
 header img {
   height: 36px;
-}
-
-header ul a {
-  color: #031c4e;
 }
 
 .mm-white-button {
@@ -84,10 +84,13 @@ header ul a {
 /* BOX */
 .mm-box {
   background-color: white;
-  color: #031c4e;
   text-align: center;
   border-radius: 5px;
   padding: 20px;
+}
+
+.mm-box h2 {
+  font-size: 36px;
 }
 
 .mm-box h2 span {
@@ -159,6 +162,41 @@ header ul a {
 }
 
 /* DEPLOY */
+#deploy {
+  margin: 80px 0;
+}
+
+#deploy div.col-12 > h2 {
+  font-size: 36px;
+}
+
 #deploy div.col-12 > p {
   font-size: 18px;
+  color: #5C6A88;
+}
+
+#deploy ul {
+  border-left: 1px solid #75809A;
+  padding-left: 12px;
+  font-size: 20px;
+  margin-top: 50px;
+}
+
+#deploy ul li {
+  padding: 10px 0;
+  color: #75809A;
+}
+
+.mm-deploy-box {
+  min-height: 165px;
+}
+
+.mm-deploy-box p {
+  color: #75809A;
+  max-width: 270px;
+}
+
+/* DEVELOPERS */
+#developers {
+  padding: 50px 0;
 }
