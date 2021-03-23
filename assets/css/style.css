@@ -31,7 +31,7 @@ body {
 }
 
 .mm-light-link {
-  color: #00D5D1;
+  color: #00d5d1;
 }
 
 .mm-blue {
@@ -262,18 +262,47 @@ header img {
 /* BOTTOM */
 /* CUSTOMERS */
 #customers {
-  
+  padding: 50px;
 }
 
-#customers h2, h5, p {
+#customers h2,
+h5 {
   color: white;
   display: inline;
 }
 
+#customers p {
+  color: #b6c3e5;
+}
+
+@media screen and (min-width: 1200px) {
+  #customers .col-xs-12 {
+    width: 46%;
+    margin: 30px 2%;
+  }
+}
+
 .mm-row {
   border-bottom: 1px solid white;
+  padding-top: 10px;
 }
 
 .mm-row:last-child {
   border: none;
+}
+
+/* ROCKERBOX */
+.mm-slide {
+  width: 50%;
+  margin: 20px auto;
+  background-color: white;
+  padding-bottom: 30px;
+}
+
+.mm-slide .mm-blue {
+  font-weight: 700;
+}
+
+.mm-slide a {
+  margin: 30px 0;
 }
